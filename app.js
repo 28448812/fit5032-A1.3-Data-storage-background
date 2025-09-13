@@ -5,11 +5,11 @@ const commentRoutes = require('./routes/commentRoutes');
 const path = require('path');
 const fs = require('fs').promises;
 
-// 创建Koa应用
+// Creating a Koa Application
 const app = new Koa();
 const PORT = process.env.PORT || 3000;
 
-// 确保数据目录存在
+// Ensure data directory exists
 const ensureDataDir = async () => {
   const dataDir = path.join(__dirname, 'data');
   try {
@@ -19,19 +19,19 @@ const ensureDataDir = async () => {
   }
 };
 
-// 中间件
+// Middleware
 app.use(cors({
-  origin: '*', // 允许所有来源，生产环境中应指定具体域名
+  origin: '*', 
   allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(bodyParser());
 
-// 路由
+// Routes
 app.use(commentRoutes.routes());
 app.use(commentRoutes.allowedMethods());
 
-// 启动服务器
+// Start the server
 const startServer = async () => {
   try {
     await ensureDataDir();

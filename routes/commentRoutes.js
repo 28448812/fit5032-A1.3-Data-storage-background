@@ -8,7 +8,7 @@ const {
   deleteComment
 } = require('../utils/dataHandler');
 
-// 获取所有评论（新增路由）
+// Get all comments
 router.get('/', async (ctx) => {
   try {
     const allComments = await getAllComments();
@@ -28,7 +28,7 @@ router.get('/', async (ctx) => {
   }
 });
 
-// 获取指定产品的评论
+// Get reviews by product ID
 router.get('/:productId', async (ctx) => {
   try {
     const { productId } = ctx.params;
@@ -49,7 +49,7 @@ router.get('/:productId', async (ctx) => {
   }
 });
 
-// 添加新评论
+// add comment
 router.post('/:productId', async (ctx) => {
   try {
     const { productId } = ctx.params;
@@ -80,7 +80,7 @@ router.post('/:productId', async (ctx) => {
   }
 });
 
-// 更新评论
+// update comment
 router.put('/:productId/:commentId', async (ctx) => {
   try {
     const { productId, commentId } = ctx.params;
@@ -121,7 +121,7 @@ router.put('/:productId/:commentId', async (ctx) => {
   }
 });
 
-// 删除评论
+// delete comment
 router.delete('/:productId/:commentId', async (ctx) => {
   try {
     const { productId, commentId } = ctx.params;
