@@ -53,7 +53,7 @@ router.get('/:productId', async (ctx) => {
 router.post('/:productId', async (ctx) => {
   try {
     const { productId } = ctx.params;
-    const { userName, content } = ctx.request.body;
+    const { userName, content,RatingVal } = ctx.request.body;
     
     if (!userName || !content) {
       ctx.status = 400;
@@ -64,7 +64,7 @@ router.post('/:productId', async (ctx) => {
       return;
     }
     
-    const newComment = await addComment(productId, { userName, content });
+    const newComment = await addComment(productId, { userName, content,RatingVal });
     ctx.status = 201;
     ctx.body = {
       success: true,

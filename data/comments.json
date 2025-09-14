@@ -2,56 +2,42 @@
   "productComments": {
     "1": [
       {
-        "id": "0accaeed-4ec3-4b59-b4af-ff1f26cd19fd",
-        "timestamp": 1757597654978,
+        "id": "ef8479e1-507d-4601-b8ac-345c66272e65",
+        "timestamp": 1757841566576,
         "edited": false,
-        "userName": "CC",
-        "content": "good!"
+        "userName": "AA",
+        "content": "good!",
+        "RatingVal": 5
       },
       {
-        "id": "15980e7b-143e-4e44-bc3d-b0c9deed1f19",
-        "timestamp": 1757599003602,
+        "id": "2e470461-1508-4d81-8a9b-6665bc824fac",
+        "timestamp": 1757841631941,
         "edited": false,
         "userName": "CC",
-        "content": "all good!!!!!"
-      },
-      {
-        "id": "faeecb3a-07b4-4b94-a282-cc3ac6d0a66b",
-        "timestamp": 1757600976474,
-        "edited": false,
-        "userName": "CC",
-        "content": "11112121"
+        "content": "good!!!!",
+        "RatingVal": 1
       }
     ],
     "2": [],
-    "3": [
-      {
-        "id": "607a0f9b-5c91-4d1c-b693-78d4377a4505",
-        "timestamp": 1757507693807,
-        "edited": false,
-        "userName": "CC",
-        "content": "666"
-      }
-    ],
+    "3": [],
     "4": [
       {
-        "id": "8afd5b6f-0948-45d0-8493-3e3c521713bc",
-        "timestamp": 1757507680354,
-        "edited": true,
-        "userName": "CC",
-        "content": "444789",
-        "lastEditTime": 1757507729170
-      }
-    ],
-    "5": [
-      {
-        "id": "06261e2b-73b0-4d3f-b0a2-e7e46befb21a",
-        "timestamp": 1757507687923,
+        "id": "07f50f99-29ee-409d-ac29-a6f00c6cf58b",
+        "timestamp": 1757816972554,
         "edited": false,
-        "userName": "CC",
-        "content": "555"
+        "userName": "AA",
+        "content": "gffgf",
+        "RatingVal": 4
+      },
+      {
+        "id": "00255e1a-339e-4d3d-b3e5-a4dad0f30355",
+        "timestamp": 1757816987532,
+        "edited": false,
+        "userName": "AA",
+        "content": "dfdf cvcvcvc c",
+        "RatingVal": 2
       }
     ],
-    "9": []
+    "5": []
   }
 }
